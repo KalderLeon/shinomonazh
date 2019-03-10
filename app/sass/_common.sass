@@ -1,0 +1,53 @@
+// ============================
+// RESETS
+// ============================
+table, thead, tbody, tfoot, tr, th, td
+	margin: 0
+	padding: 0
+	border: none
+	border-collapse: inherit
+	border-spacing: 0
+	border-color: inherit
+	vertical-align: inherit
+	font-weight: inherit
+	-webkit-border-horizontal-spacing: 0
+	-webkit-border-vertical-spacing: 0
+
+*
+	margin: 0
+	padding: 0
+
+ul, ol
+	list-style-type: none
+
+a
+	text-decoration: none
+	cursor: pointer
+
+input:focus,
+label:focus,
+textarea:focus,
+select:focus,
+option:focus,
+button:focus,
+a:focus
+	outline: none
+
+*, *:before, *:after, input, textarea, button, select
+	box-sizing: border-box
+
+html, body, input, textarea, option, label, button
+	font-weight: 200
+	font-family: 'Montserrat', sans-serif
+	color: $mainC1
+
+html
+	-webkit-text-size-adjust: 100%
+
+.container
+	width: 100%
+	max-width: nth($mediaBp, 1)
+	padding-left: 10px
+	padding-right: 10px
+	margin-left: auto
+	margin-right: auto

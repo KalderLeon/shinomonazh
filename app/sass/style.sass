@@ -1,0 +1,209 @@
+@import "_options"
+@import "_common"
+@import "_header"
+@import "_about"
+@import "_our-advantages"
+@import "_costOfServices"
+@import "_saveTire"
+@import "_priceSaveTire"
+@import "_reviews"
+@import "_btnScreen"
+@import "_contacts"
+@import "_footer"
+
+
+// $mediaBp: (1200px, 992px, 767px, 640px, 480px)
+// Media
+@media (max-width: nth($mediaBp, 1))
+    .container
+        
+    .header-content-right
+        img
+            width: 100%
+            top: 50%
+    
+@media (max-width: nth($mediaBp, 2))
+    .container
+        .header-content-right
+
+        .header-content-left
+            width: 50%
+        .header-content-left-title
+            font-size: 35px
+
+        .about-content
+            flex-direction: column
+            align-items: center
+            padding-bottom: 0
+            &-left
+                width: 100%
+                padding: 0 10px
+                text-align: justify
+        .our-advantages
+            padding: 0
+
+        .advantages-content-grid-item
+            padding-right: 0
+        .saveTire-block
+        padding: 50px 0 50px
+
+        .saveTire-content
+            flex-direction: column-reverse
+            align-items: center
+            &-right
+                width: 70%
+                &__title
+                    text-align: center
+                    &:after
+                        display: none
+            
+
+        .top-line-btn
+            left: 64%
+        .advantages-content
+            &-grid
+                justify-content: space-around
+                &-item
+                    max-width: 43%
+            &__title
+                text-align: center
+                &:before
+                    display: none
+        
+        .costOfServices-title
+            text-align: center
+            margin-bottom: 0
+            &:before
+                display: none
+
+        .priceSaveTire-title
+            text-align: center
+            margin-bottom: 0
+            &:before
+                display: none
+
+        .footer-content
+            justify-content: space-between
+            padding: 0 10px
+
+
+@media (max-width: nth($mediaBp, 3))
+    .container
+        .top-line-btn
+            padding: 10px 20px
+            font-size: 14px
+            left: 65%
+
+            
+        .header-content-right
+            img
+                display: none
+        
+        .header-content-left
+            width: 100%
+            &-title
+                max--width: 100%
+                text-align: center
+                font-size: 35px
+                &__p
+                    text-align: center
+        .header-content-left-plate
+            min-width: 100%
+            
+   
+        .advantages-content-grid-item p
+            font-size: 15px
+
+        .saveTire-content-right__grid_item p
+            font-size: 13px
+            
+        .about-block
+            background-color: #d7d7d7
+
+        .about-content-left
+            width: 100%
+            padding: 0 10px
+            text-align: justify
+
+        .about-content
+            flex-direction: column
+            align-items: center
+        
+        .advantages-content-grid-item
+            min-width: 100%
+            display: flex
+            justify-content: flex-start
+
+    .saveTire-block
+        padding: 5px 0 5px
+
+        .saveTire-content
+            flex-direction: column-reverse
+            align-items: center
+
+        .saveTire-content-right
+            width: 70%
+    .costOfServices-title
+        text-align: center
+    
+    .priceSaveTire-title
+        &:after
+            display: none
+
+    .saveTire-content-left
+        padding-left: 50px
+
+    .costOfServices
+        padding: 50px 0
+    .priceSaveTire-title
+        text-align: center
+    .priceSaveTire-block
+        padding: 50px
+
+    .saveTire-content-right
+        &__grid
+            &_item
+                width: 100%
+                justify-content: flex-start
+                margin-bottom: 10px
+    
+    .btnScreen-content
+        &__right 
+            img
+                display: none
+    .contacts-form
+        margin: 0 auto
+
+    .footer-content
+        justify-content: space-between
+        padding: 0 10px
+
+
+@media (max-width: nth($mediaBp, 4))
+    .container .header-content-right
+        display: none
+
+    .header-content-left-plate
+        &__grid
+            &_item
+                width: 100%
+                justify-content: flex-start
+
+        .advantages-content-grid
+            &-item
+                min-width: 100%
+    
+    .top-line-btn
+        padding: 10px 15px
+        font-size: 13px
+        left: 30% 
+
+    .btnScreen-content
+        &__right 
+            img
+                display: none
+
+    .contacts-form
+        width: 75%
+        padding: 50px 12px 60px 40px
+

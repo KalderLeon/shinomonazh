@@ -1,0 +1,66 @@
+.reviews-block
+    padding: 120px 0 
+    background: url('../img/images/slide-bg.png')
+    background-size: cover
+    background-position: center center
+
+.reviews-content
+    &__title
+        text-transform: uppercase
+        font-weight: 600
+        font-family: Montserrat, sans-serif
+        font-size: 30px
+        position: relative
+        color: #000
+        &:after
+            content: ''
+            display: block
+            width: 130px
+            height: 3px
+            background-color: #000
+            position: absolute
+            top: 15px
+            right: 100%
+            margin-right: 15px
+
+.reviews-content-slider
+    .owl
+        &-item
+            border-radius: 10px
+            transform: scale(.6)
+            transition: .3s
+            opacity: .5
+            margin-top: 60px
+        
+            &.active.center
+                transform: scale(1)
+                opacity: 1
+
+.custom-p
+    margin: 0 auto
+    width: 100%
+    font-size: 16px
+    font-weight: 400
+    line-height: 27px
+    border-radius: 10px
+    background-color: #fff
+    padding: 60px
+    
+
+.user
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 40px
+    &-img
+        margin-right: 35px
+    &-desc
+        p
+            padding: 0
+            margin: 0
+            span
+                font-size: 14px
+                font-weight: 500
+            ~p
+            font-size: 12px
+        
